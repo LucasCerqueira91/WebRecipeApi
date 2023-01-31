@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NTIg8SL1w4ccDFFItGkgpPPiCP0+u3CYx5k2FFdkxE1N/aWxq4mZ4VZJ94xAELy4LoEfw16DoOoa/x8vJL82Tg==",
+  "dgSpecHash": "GLLNLRi8uGwMVTEp1jZEKr0NJstgYIkA3ILm74Q8EXwHLB5eITrAq1zK9M/SmXsffJsEQTUbv4FlA+NdGNY3xA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiCookingGrams.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiRecipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.17\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.17.nupkg.sha512",

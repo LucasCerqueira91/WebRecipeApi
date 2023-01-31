@@ -769,9 +769,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiCookingGrams.csproj",
-      "projectName": "WebApiCookingGrams",
-      "projectPath": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiCookingGrams.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiRecipes.csproj",
+      "projectName": "WebApiRecipes",
+      "projectPath": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\WebApiRecipes.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lucas\\source\\repos\\WebApiRecipes\\obj\\",
       "projectStyle": "PackageReference",
