@@ -9,6 +9,8 @@ using Services.Services.Implementatios;
 using WebApiRecipe.Services.Services.Implementatios;
 using WebApiRecipe.Services.Services.Interfaces;
 using WebApiRecipes.Repositories.Implementations;
+using WebApiRecipes.Repositories.Repositories.Implementations;
+using WebApiRecipes.Repositories.Repositories.Interfaces;
 using WebRecipesRepositories.Interfaces;
 
 namespace WebApiRecipes
@@ -32,7 +34,8 @@ namespace WebApiRecipes
             services.AddScoped<IIngredientRepository, IngredientRepository>();
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IRecipeFavoriteRepository, RecipeFavoriteRepository>();
-            services.AddScoped<IRecipeIngredientRepository, RecipeIngredientRepository>();
+            services.AddScoped<IIngredientDescriptionRepository, IngredientDescriptionRepository>();
+            services.AddScoped<IIngredientUnitMeasurementRepository, IngredientUnitMeasurementRepository>();
             services.AddScoped<IRecipeRepository, RecipeRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
 
@@ -41,7 +44,8 @@ namespace WebApiRecipes
             services.AddScoped<IIngredientService, IngredientService>();
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<IRecipeFavoriteService, RecipeFavoriteService>();
-            services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
+            services.AddScoped<IIngredientDescriptionService, IngredientDescriptionService>();
+            services.AddScoped<IIngredientUnitMeasurementService, IngredientUnitMeasurementService>();
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IUserService, UserService>();
             
