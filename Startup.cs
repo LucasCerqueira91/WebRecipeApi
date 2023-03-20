@@ -1,13 +1,15 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Services.Services.Implementatios;
+using WebApiRecipe.Services.Services.Implementatios;
+using WebApiRecipe.Services.Services.Interfaces;
+using WebApiRecipes.Repositories.Implementations;
+using WebRecipesRepositories.Interfaces;
 
 namespace WebApiRecipes
 {
@@ -24,6 +26,25 @@ namespace WebApiRecipes
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // Registo dos Repositórios
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IIngredientRepository, IngredientRepository>();
+            services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IRecipeFavoriteRepository, RecipeFavoriteRepository>();
+            services.AddScoped<IRecipeIngredientRepository, RecipeIngredientRepository>();
+            services.AddScoped<IRecipeRepository, RecipeRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
+            // Resgisto dos Serviços
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IIngredientService, IngredientService>();
+            services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<IRecipeFavoriteService, RecipeFavoriteService>();
+            services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
+            services.AddScoped<IRecipeService, RecipeService>();
+            services.AddScoped<IUserService, UserService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
